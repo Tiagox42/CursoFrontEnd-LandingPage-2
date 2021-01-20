@@ -20,7 +20,7 @@ html,body{
 }
 
 header{
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(220, 220, 220);
     padding: 10px 2% 40px 2%;
 }
 
@@ -71,7 +71,7 @@ section.cover-form{
     padding: 25px 15px;
     color: black;
     font-size: 18px;
-    background-color: rgb(210, 210, 210);
+    background-color: #657f88;
 }
 
 .form-container form{
@@ -111,6 +111,18 @@ section.cover-form{
     border: 0;
 }
 
+.icone-seta{
+	position: absolute;
+	left: 50%;
+	top: 84%;
+	transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-image: url('../imagens/arrow.png');
+}
+
 section.chamada{
     z-index: 1;
     width: 100%;
@@ -139,6 +151,64 @@ section.chamada p{
     color: #cab4a4;
     font-size: 18px;
     font-weight: normal;
+}
+
+.flex-mosaico{
+    display: flex;
+}
+
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item-2-mosaico{
+    padding: 60px 40px;
+    width: 40%;
+    background-color: #525252;
+    color: white;
+}
+
+.item-3-mosaico{
+    padding: 60px 40px;
+    width: 100%;
+    background-color: #222829;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    padding-top: 40px;
+}
+
+footer p{
+    margin-top: 8px;
+}
+
+footer img{
+    width: 120px;
+}
+
+@media screen and (max-width: 960px){
+    .icone-seta{
+	    top: 95%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .flex-mosaico{
+        display: block;
+    }
+    .item-1-mosaico{
+        padding-top: 70%;
+        width: 100%;
+    }
+    .item-2-mosaico{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 960px){
